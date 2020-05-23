@@ -1,28 +1,31 @@
-.container {
-  padding: .5rem 2%;
+* {
+  box-sizing: border-box;
 }
 
 .container {
-  padding: .5rem 2%;
+  padding: .5rem 2% 1rem 2%;
 }
 
-.tab {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  margin-bottom: 1rem;
-  padding: 0;
+h1 {
+  font-weight: normal;
 }
 
-.tab-item + .tab-item {
-  margin-left: 1rem;
+input {
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+  font-size: .825rem;
+  padding: .5rem;
+  margin-bottom: .5rem;
+  width: 100%;
 }
 
-.tab-content {
-  background: #f1fafa;
-  padding: .5rem 1rem;
+output img {
+  max-width: 100%;
 }
 
-.tab-content h2 {
-  line-height: 1.125rem;
+output p {
+  background: #f7f7f7;
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: center;
 }
