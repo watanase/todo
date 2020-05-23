@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Vue</title>
+    <link rel="stylesheet" type="text/css" href="example.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <h1>Welcome to Vue</h1>
+            <ul class="tab">
+                <li class="tab-item">
+                    <button @click="toggle(1)">tab 1</button>
+                </li>
+                <li class="tab-item">
+                    <button @click="toggle(2)">tab 2</button>
+                </li>
+                <li class="tab-item">
+                    <button @click="toggle(3)">tab 3</button>
+                </li>
+            </ul>
+            <section class="tab-content" v-show="currentTab === 1">
+                <h2>Tab 1</h2>
+                <p>パーマン1合</p>
+            </section>
+            <section class="tab-content" v-show="currentTab === 2">
+                <h2>Tab 2</h2>
+                <p>パーマン2合</p>
+            </section>
+            <section class="tab-content" v-show="currentTab === 3">
+                <h2>Tab 3</h2>
+                <p>パーマンⅢ合</p>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
